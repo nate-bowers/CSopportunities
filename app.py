@@ -23,7 +23,8 @@ def quiz():
 
 @app.route("/about")
 def about():
-    #temp1= Event(name="iD Tech Summer Camps at Palo Alto High School", link="https://www.idtech.com/locations/california-summer-camps/palo-alto-high-school", summary="At iD Tech Summer Camps, students learn to code, design video games, produce videos, and more. This specific camp takes place at Palo Alto High School in California.", organization="iD Tech", price="~$1000 Prices Vary", online=False, location="Palo Alto High School, California", image_address="https://2018media.idtech.com/images/1571703681_loc-tuition-includes.jpg.webp?692ad5b218", age_high=17, age_low=7, event_type="camp", during_school_year=False)
+    
+
     #db_session.add(temp1)
     #db_session.commit()
     return render_template("about.html")

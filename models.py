@@ -25,3 +25,4 @@ class Event(Base):
     age_low = Column("age_low", INTEGER)
     event_type = Column("event_type", TEXT)
     during_school_year = Column("during_school_year", Boolean)
+    length = Column("length", TEXT)
