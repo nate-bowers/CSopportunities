@@ -23,9 +23,7 @@ def quiz():
 
 @app.route("/about")
 def about():
-    
-
-    #db_session.add(temp1)
+    #db_session.add(temp40)
     #db_session.commit()
     return render_template("about.html")
 
