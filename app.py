@@ -15,7 +15,8 @@ def home():
 
 @app.route("/all")
 def all():
-    return render_template("allopps.html")
+    opps=db_session.query(Event).all()
+    return render_template("allopps.html", opps=opps)
 
 @app.route("/quiz")
 def quiz():

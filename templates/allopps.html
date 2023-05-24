@@ -1,9 +1,30 @@
 {% set active_page = "login" %}
 {% extends "base.html" %}
 
-{% block title %}Login{%endblock%}
+{% block title %}Events{%endblock%}
 {% block content %}
-
-
-
+<div class="container">
+    <div class="row">
+        {% for opp in opps %}
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img class="card-img-top" src="{{ opp.image_address }}" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ opp.name }}</h5>
+                        <p class="card-text">{{ opp.summary }}</p>
+                        <p class="card-text">organization: {{opp.organization}}</p>
+                        <p class="card-text">price: {{opp.price}}</p>
+                        <p class="card-text">location: {{opp.location}}</p>
+                        <p class="card-text">age range: {{opp.age_low}}-{{opp.age_high}}</p>
+                        <p class="card-text">type: {{opp.location}}</p>
+                        <p class="card-text">length: {{opp.length}}</p>
+                        <form action="{{opp.link}}" method="get" target="_blank">
+                            <button type="submit">Learn more</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
 {%endblock%}

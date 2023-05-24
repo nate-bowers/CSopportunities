@@ -1,9 +1,20 @@
 {% set active_page = "login" %}
 {% extends "base.html" %}
-
-{% block title %}Login{%endblock%}
+{%block bodyclass%}class="homecontent"{%endblock%}
+{% block title %}CS Home{%endblock%}
 {% block content %}
-
-<h1>hi</h1>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-8">
+            <div class="HomePageText">
+                <h1 class="HomePageTexttext">Computer Science Opportunities</h1>
+                <h2 class="HomePageTexttext">Bay Area</h2>
+                <button class="quiz-button button HomePageTexttext">
+                    <a href="/quiz">Take the Quiz</a>
+                </button>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </div>
+        <div class="col-md-1">
+        </div>
 {%endblock%}

@@ -1,18 +1,61 @@
 .navbar {
     background-color: #004983;
 }
-.navbar img {
-    
+.navbar img { 
     top: 5px; /* Adjust the top position as needed */
     left: 5px; /* Adjust the left position as needed */
     width: 60px; /* Adjust the width of the image */
     height: auto; /* The height adjusts automatically to maintain the image's aspect ratio */
     margin-right: 1vw;
+}
+.navbar a{
+    color:white;
+    font-family: Verdana,Geneva,sans-serif; 
+    
+}
+.navbardropdownbutton text{
+    margin-right: 5vw;
+}
+.navbar-toggler {
+    background-color: #f5f5f5; /* change background color */
+    border: white 3px solid; /* remove border */
+}
+.navbar-toggler:hover {
+    background-color: #ddd; /* change hover background color */
+    color: #333; /* change hover link color */
+}
+.homecontent{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://static.brusheezy.com/system/resources/thumbnails/000/050/505/original/blue-abstract-bubble-background-photoshop-backgrounds.jpg); 
+
+}
+  body {
+    background-image: url(https://thumbs.dreamstime.com/b/modern-seamless-vector-geometric-pattern-tile-texture-endless-design-blue-abstract-polygonal-repeatable-background-198769241.jpg);
+    background-repeat: repeat;
   }
 
-  body {
-    background: linear-gradient(to bottom, white, #45c2f4);
-    background-size: cover;
-    background-repeat: no-repeat;
+  .HomePageText{
+    margin-top: 15vh;
+    margin-left: 10vw;
   }
-  
+  .HomePageText{
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+  }
+  .HomePageText h1{
+    font-size: 50px;
+  }
+  .HomePageText h2{
+    font-size: 30px;
+  }
+  .HomePageText button{
+    font-size: 50px;
+  }
+  .card {
+    margin-top: 1vh;
+}
+.abouttext{
+    background:rgba(255, 255, 255, 0.7);
+
+}
