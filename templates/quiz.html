@@ -3,7 +3,26 @@
 
 {% block title %}Quiz{%endblock%}
 {% block content %}
-
-
+    <div class="container">
+        <div id="question-container" class="">
+            
+            <div id="question">
+                <p></p>Question
+            </div>
+            <span id="slider-value"></span>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn ans-btn">Answer 1</button>
+                <button class="btn ans-btn">Answer 2</button>
+                <button class="btn ans-btn">Answer 3</button>
+                <button class="btn ans-btn">Answer 4</button>
+            </div>
+            
+        </div>
+        <div class="controls">
+            <button id="next-btn" class="next-btn btn">Next</button>
+        </div>
+            <a id="submit" href="/process-results" class="hide btn">Submit</a>
+        
+    </div>
 
 {%endblock%}

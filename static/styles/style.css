@@ -59,3 +59,88 @@
     background:rgba(255, 255, 255, 0.7);
 
 }
+.learnmorebutton{
+    margin-left:7vw;
+}
+
+/* here down*/
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+
+  }
+  
+  .btn:hover {
+    border: black 1px solid;
+  }
+  
+  .btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  #question-container{
+    background-color: lightblue;
+    margin-top: 10vh;
+    border-radius: 7px;
+  }
+  .controls{
+    
+    border-radius: 5px;
+  }
+  #slider-value{
+    display: flex;
+    font-size: xx-large;
+    background-color: lightblue;
+    text-align: center;
+    justify-content: center;
+  }
+  .next-btn{
+    font-size: 60px;
+    background-color: lightblue;
+  }
+  #question{
+    font-size: x-large;
+    text-align: center;
+  }
+  .ageslider {
+    display:block;
+    margin-left: auto;
+    width: 40vw;
+  }
+  .hide {
+    display: none;
+  }
+  
+  .sorterrow{
+    background-color: #006dc6;
+  }

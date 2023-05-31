@@ -6,9 +6,8 @@
     <title>{% block title%}{% endblock %}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
-
+    <script defer src="../static/styles/script.js"></script>
 </head>
     
 <body {% block bodyclass %}{%endblock%}>
@@ -38,6 +37,10 @@
     {% set active_page = active_page|default('home') -%}
     {% block content %}
     {% endblock %}
+    <footer>
+        <a href='http://www.freevisitorcounters.com'>http://freevisitorcounters.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=da393d2ef66ff3d0a36f9537e3bd82e0f82ca58a'></script>
+        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1036980/t/2"></script>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
